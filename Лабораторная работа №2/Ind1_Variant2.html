@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let year = prompt('Введите год', 2019);
+    let month = prompt('Введите месяц',"сентябрь");
+    let day = prompt('Введите день',5);
+    let message;
+    if(1601<=year && year<=1700)
+        message='17 век';
+    else if(1701<=year && year<=1800)
+        message='18 век';
+    else if(1801<=year && year<=1900)
+        message='19 век';
+    else if(1901<=year && year<=2000)
+        message='20 век';
+    else if(2001<=year && year<=2100)
+        message='21 век';
+    else
+        message='Век науке не известен';
+    alert( message );
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="example">Купить холодильник?</p>
+    <button onclick="writeFrige()">Да</button>
+    <script>
+        let frige=new Object();
+        frige.color="Красный";
+        frige.brand="Bosch";
+        frige.model="KGV 36NW1AR";
+        frige.price=26490;
+        function writeFrige () {
+            document.getElementById("example").innerHTML= frige.color+ '</br>' +frige.brand+'</br>'+
+                                        frige.model+'</br>Цена '+frige.price;
+        }
+    </script>
+</body>
+</html>

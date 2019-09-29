@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Нажмите кнопку для замены текста страницы.</p>
+    <p id="example">Сложить 5 и 14?</p>
+    <button onclick="Sum()">Да</button>
+    <button onclick="returnText()">Нет</button>
+    <script>
+        function Sum()
+        {
+            let a=5;
+            let b=14;
+            document.getElementById("example").innerHTML=a+b;
+        }
+        function returnText()       
+        {
+            document.getElementById("example").innerHTML="Сложить 5 и 14?";
+        }
+    </script>
+</body>
+</html>
